@@ -1,0 +1,36 @@
+{
+  "copy": "2017 My Development",
+  "development": "My Development",
+  "side": [
+    {
+      "title": "Info",
+      "item": [
+        {
+          "link": "/",
+          "label": "Quick blog"
+        }
+        ,{
+          "link": "/about",
+          "label": "About"
+        }
+        ,{
+          "link": "/contact",
+          "label": "Contact"
+        }
+      ]
+    }
+    ,{
+      "title": "Category",
+      "item": [
+        {
+          "link": "/css",
+          "label": "CSS"
+        }
+        ,{
+          "link": "/html",
+          "label": "HTML"
+        }
+      ]
+    }
+  ]
+}

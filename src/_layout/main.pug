@@ -10,6 +10,9 @@ html
     if config.entry.css.inline
       link(rel="stylesheet", href=inlinePath, inline)
   body
+    //- this '#top' and '#continue' will each generate an empty div with the given
+      id (#top and below #continue) used to navigate to it when 'top' and 
+      'continue' links are clicked
     #top
     block welcome
     #continue
