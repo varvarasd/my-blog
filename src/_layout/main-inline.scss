@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+@import '_component/continue/continue';
 // in order for something to be able to have height 100%
 // its parent and other containers must have a height defined
 // so we start with html and body

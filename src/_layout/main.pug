@@ -6,11 +6,12 @@ html
       title #{title}
     if description
       meta(name="description", content="description")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
     if config.entry.css.inline
       link(rel="stylesheet", href=inlinePath, inline)
   body
     block welcome
+    #continue
     block content
 //- add external css at the end of HTML so it doesnt block any resource download
 if config.entry.css.external
