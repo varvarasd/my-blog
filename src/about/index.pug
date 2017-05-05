@@ -1,0 +1,31 @@
+//- Since this file, 'index.pug' is located in src/about, to
+  get the correct path to the 'main layout', we'll use '..' to 
+  go up one folder into 'src' followed by '_layout', the name 
+  of the folder and 'main' the name of the file.
+  The '.pug' extension is not required but it can be used.
+  
+extends ../_layout/main
+
+block config
+  const title = 'About'
+  const description = 'Some text about me'
+  
+block welcome
+  .welcome
+    h1=title
+    p.lead=description
+    include ../_component/continue/continue
+
+block content
+  h2 Some subtitle
+  ul 
+    li Some content
+    li Some content
+    li Some content
+    li Some content
+  
+  h2 Some 2nd subtitle
+  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Sed dictum cursus bibendum. Aenean rhoncus ante mi, id 
+    facilisis tortor volutpat a. In iaculis quam diam, id 
+    rhoncus odio laoreet laoreet. Proin gra

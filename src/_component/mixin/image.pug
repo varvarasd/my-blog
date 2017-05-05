@@ -13,7 +13,7 @@ mixin image ({filename, caption, autopath})
   figure.image-container&attributes(attributes)
     img.image(src=path + filename)
       
-      if caption
-        figcaption.image-caption
-          strong Note:
-          span= ` ${caption}`
+    if caption
+      figcaption.image-caption
+        strong Note:
+        span= ` ${caption}`

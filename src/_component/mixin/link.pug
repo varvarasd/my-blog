@@ -1,0 +1,12 @@
+//- Usage:
+  multiline:
+  link ({
+    href: 'https://github.com/varvarasd/',
+    text: 'Click me',
+    title: 'Click this link to see my github profile'
+  })
+  one line:
+  link({ href: 'https://github.com/varvarasd/', text: 'Click me', title: 'Click this link to see my github profile'})
+
+mixin link({href, text, title})
+  a(class!=attributes.class href=href title=title)= text
