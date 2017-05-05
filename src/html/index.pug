@@ -1,1 +1,17 @@
-h1 HTML list of articles
+extends ../_layout/main
+
+block config
+  - const title = 'HTML5 Introduction'
+  - const description = 'Discover HTML for beginners'
+
+block welcome
+  .welcome
+    h1=title
+    p.lead=description
+    include ../_component/continue/continue
+
+block content
+  h2 Read more to find out how cool HTML really is
+  .list-wrapper
+    each article in data.html
+      include ../_component/article/article

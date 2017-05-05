@@ -1,1 +1,17 @@
-h1 CSS list of articles
+extends ../_layout/main
+
+block config
+  - const title = 'CSS3 Introduction'
+  - const description = 'Explore CSS3 in a new light'
+  
+block welcome
+  .welcome
+    h1=title
+    p.lead=description
+    include ../_component/continue/continue
+
+block content
+  h2 Discover the power of awsome CSS3
+  .list-wrapper
+    each article in data.css
+      include ../component/article/article
