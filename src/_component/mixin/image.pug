@@ -7,7 +7,7 @@
   autopath - [boolean] if true prefix the filename with /asset/image
                       if false don't execute
                       
-mixin image ({filename, caption, autopath})
+mixin image({filename, caption, autopath})
   - var path = autopath ? "/asset/image/" : ""
   
   figure.image-container&attributes(attributes)
