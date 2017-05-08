@@ -2,7 +2,7 @@
   {
     "title": "CSS Tutorial",
     "link": "/article/css-tutorial",
-    "description": "CSS is a language that describes the style of an HTML document and how HTML elements are displayed"
+    "description": "CSS is a language that describes the style of an HTML document and how HTML elements should be displayed."
   }
   ,{
     "title": "CSS Introduction",
@@ -22,6 +22,6 @@
   ,{
     "title": "CSS Colors",
     "link": "/article/css-colors",
-    "description": "HTML and CSS support 140 standard color names."
+    "description": "HTML and CSS supports 140 standard color names."
   }
 ]
