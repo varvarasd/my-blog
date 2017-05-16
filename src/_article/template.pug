@@ -6,7 +6,7 @@ block welcome
   .welcome 
     h1= title
     p.lead= description
-    include _component/continue/continue
+    include ../_component/continue/continue
 block content
   #continue
     each item in template.body
@@ -26,7 +26,7 @@ block content
         h3.pre-title= item.title
         pre= item.data
       if item.type === "img"
-        +image({filename: item.src, caption: item.caption, autopath= item.autopath})
+        +image({filename: item.src, caption: item.caption, autopath: item.autopath})
       if item.type === "hr"
         hr
       if item.type === "blockquote"
