@@ -1,7 +1,7 @@
 {
   "config": {
     "//": "set publish to false to skip this in production",
-    "publish": true
+    "publish": false
   },
   "head": {
     "title": "HTML Basic",

@@ -10,7 +10,7 @@ block welcome
 block content
   #continue
     each item in template.body
-      if["h1", "h2", "h3", "h4", "h5", "h6"].indexOf(item.type) != -1
+      if ["h1", "h2", "h3", "h4", "h5", "h6"].indexOf(item.type) !== -1
         #{item.type} #{item.data}
       if item.type === "paragraph"
         each p in item.data
