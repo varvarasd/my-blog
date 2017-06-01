@@ -34,6 +34,19 @@ block welcome
 block content
   h2 Why Web Development?
   
+  //- make use of the blockquote mixin
+  +blockquote ({
+    source: 'Daniel Varvara',
+    link: 'http://danvars.uk',
+    body: ['A journey of thousands of miles starts with a single line of code']
+  })
+  
+  //- make use of the image mixin
+  +image({
+    filename: 'github.png',
+    caption: 'Codes feel good on Github',
+    autopath: true
+  })
   //- create a paragraph with a lead class
   
   p.lead Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
